@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="Challenge.css">
+  <title>Challenge</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link
+    href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+    rel="stylesheet">
+</head>
+<style>
+  .sidenav {
+    height: 100%;
+    width: 160px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #24369d;
+    overflow-x: hidden;
+    padding-top: 20px;
+  }
+
+  .sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 15px;
+    color: white;
+    display: block;
+  }
+
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+
+  .fs {
+    font-size: 18px;
+  }
+
+  @media screen and (max-height: 450px) {
+    .sidenav {
+      padding-top: 15px;
+    }
+
+    .sidenav a {
+      font-size: 18px;
+    }
+  }
+
+  .hr-align {
+    width: 30px !important;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-left: 20px !important;
+    border: 0;
+    border-top: 2px solid rgb(239 235 235 / 23%) !important;
+  }
+
+  .btm {
+    overflow: hidden;
+    position: fixed;
+    bottom: 0;
+  }
+  
+  .ml{
+    margin-left: 6px;
+  }
+
+  .vl {
+    border-left: 1px solid rgb(234 240 234 / 26%);
+    height: 35px;
+}
+.fa{
+  color: white;
+}
+</style>
+
+
+
+<body>
+
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-lg-2 navv pr-0 mr-0">
+        <div class="sidenav">
+          <div class="logo-content m-2">
+            <img src="assets/logo.png" alt="">
+          </div>
+          <ul>
+            <li>
+              <a href="#">
+                first
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                second
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                third
+              </a>
+            </li>
+          </ul>
+          <div class="hr-align"></div>
+          <ul>
+            <li>
+              <a href="#">
+                first
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                second
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                third
+              </a>
+            </li>
+          </ul>
+          <div class="hr-align"></div>
+          <ul>
+            <li>
+              <a href="#">
+                first
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                second
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                third
+              </a>
+            </li>
+          </ul>
+          <div class="row btm">
+            <div class="col-md-2">
+                <i class="fa fa-bell-o" aria-hidden="true"></i>
+              <!-- <div class="vl"></div> -->
+            </div>
+            <div class="col-md-1"><div class="vl"></div></div> 
+            <div class="col-md-2">
+              <i class="fa fa-cog" aria-hidden="true"></i>
+            </div>
+            <div class="col-md-1 ml"><div class="vl"></div></div> 
+            <div class="col-md-2">
+              <i class="fa fa-picture-o" aria-hidden="true"></i>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <div class="col-lg-10 ml-0 pl-0">
+        <div id="content">
+          <div id="content-wrapper" class="d-flex flex-column">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+              <!-- split button -->
+              <div class="btn-group">
+                <button type="button" class="btn btn-light splitbtn">Design Task</button>
+                <button type="button" class="btn btn-light splitbtn dropdown-toggle dropdown-toggle-split"
+                  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                </button>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">Separated link</a>
+                </div>
+              </div>
+              <button class="navright-btn btn ml-auto">+ ADD PROJECT</button>
+            </nav>
+            <div class="container-fluid">
+              <div class="row mt-1">
+                <!-- Area Chart -->
+                <div class="col-xl-8 col-lg-7 p-0 ">
+                  <div class="card card-outline">
+                    <!-- Card Header - Dropdown -->
+                    <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                      <h6 class="m-0 font-weight-bold text-dark">Timesheet</h6>
+                      <div class="dropdown no-arrow">
+                        <button class="VFSbtn btn mr-2">VIEW FULL SHEET</button>
+                        <a href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
+                          aria-expanded="false">
+                          <img src="assets/more.png" alt="">
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right shadow animated--fade-in"
+                          aria-labelledby="dropdownMenuLink">
+                          <a class="dropdown-item" href="#">Action</a>
+                          <a class="dropdown-item" href="#">Another action</a>
+                          <div class="dropdown-divider"></div>
+                          <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Card Body -->
+                    <div class="card-body table-responsive mb-3">
+                      <table class="table">
+                        <thead>
+                          <tr>
+                            <th scope="col">Project</th>
+                            <th scope="col">Date</th>
+                            <th scope="col">Start Time</th>
+                            <th scope="col">Stop Time</th>
+                            <th scope="col">Duration</th>
+                          </tr>
+                        </thead>
+                        <tbody id="constructTable">
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-xl-4 col-lg-5 p-0">
+                  <div class="card shadow card-outline">
+                    <!-- Card Header  -->
+                    <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                      <h6 class="m-0 font-weight-bold text-dark">Report</h6>
+                    </div>
+                    <!-- Card Body -->
+                    <div class="card-body">
+                      <div class="col-lg-12 mb-5">
+                        <div class="card report-card text-white shadow">
+                          <div class="card-body row">
+                            <div class="pl-3 imagecard">
+                              <img src="assets/graph.png" alt="">
+                            </div>
+                            <div class="col report-content">
+                              <span class="small">WEEKLY ACTIVITY</span>
+                              <div class="text-white-50 h5">52%</div>
+                            </div>
+                            <div class="float-right mr-4">
+                              <a href="#" class="sucessUp"><i class="fa fa-caret-up"></i>
+                                <span>17%</span></a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-12 mb-5">
+                        <div class="card report-card2 text-white shadow">
+                          <div class="card-body row">
+                            <div class="pl-3 imagecard  bg-light">
+                              <img src="assets/timer_blue.png" alt="">
+                            </div>
+                            <div class="col report-content">
+                              <span class="report-text text-muted">worked this week</span>
+                              <div class="text-dark h5">11:56:33</div>
+                            </div>
+                            <div class="float-right mr-4">
+                              <a href="#" class="sucessDown"><i class="fa fa-caret-down"></i>
+                                <span>17%</span></a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-12 mb-1">
+                        <div class="exportbtn">
+                          <a href="#">
+                            <img src="assets/pdf.png" alt="">
+                            <span class="pl-3">export as pdf</span>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+
+                </div>
+              </div>
+            </div>
+
+            <div class="container-fluid">
+              <div class="row mt-0 p-0">
+                <div class="col-xl-8 col-lg-7 p-0 ">
+                  <div class="card card-outline">
+                    <!-- Card Header - Dropdown -->
+                    <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                      <h5 class="m-0 font-weight-bold text-dark">To-Do List</h5>
+                    </div>
+                    <!-- Card Body -->
+                    <div class="card-body">
+                      <div class="todo-row float-left">
+                        <div class="todo-col1 pl-3">
+                          <h2 class="card-title">20</h2>
+                          <h6 class="card-subtitle mb-2">May</h6>
+                        </div>
+
+                      </div>
+                      <div class="card float-center pl-4">
+                        <div class="card-header todo-card-active">
+                          <div class="font-weight-bold">
+                            Revamp Instagram app
+                            <div class="text-white-50 small text-muted">Today</div>
+                          </div>
+                          <span class="float-right text-muted" style="margin-top: -33px;"> <img src="assets/more.png"
+                              alt="">
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="card-body">
+                      <div class="todo-row float-left">
+                        <div class="todo-col1-passive pl-3">
+                          <h2 class="card-title">21</h2>
+                          <h6 class="card-subtitle mb-2">May</h6>
+                        </div>
+
+                      </div>
+                      <div class="card float-center pl-4">
+                        <div class="card-header todo-card-passive">
+                          <div class="font-weight-bold">
+                            Prototyping
+                            <div class="text-white-50 small text-muted">Upcoming</div>
+                          </div>
+                          <span class="float-right text-muted" style="margin-top: -33px;"> <img src="assets/more.png"
+                              alt="">
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="card-body">
+                      <div class="todo-row float-left">
+                        <div class="todo-col1-passive pl-3">
+                          <h2 class="card-title">22</h2>
+                          <h6 class="card-subtitle mb-2 text-muted">May</h6>
+                        </div>
+                      </div>
+                      <div class="card float-center pl-4">
+                        <div class="card-header todo-card-passive">
+                          <div class="font-weight-bold">
+                            Collect reference for now project
+                            <div class="text-white-50 small">Upcoming</div>
+                          </div>
+                          <span class="float-right text-muted" style="margin-top: -33px;"> <img src="assets/more.png"
+                              alt="">
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl-4 col-lg-5 p-0 mt-0">
+                  <div class="card shadow card-outline">
+                    <!-- Card Header  -->
+                    <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                      <h5 class="m-0 font-weight-bold text-dark">Screenshots</h5>
+                    </div>
+                    <!-- Card Body -->
+                    <div class="card-body">
+                      <div class="col-lg-12" style="margin-top: -30px;">
+                        <div class="card text-white shadow">
+                          <div class="card-body row">
+                            <div class="">
+                              <img src="assets/picture.png" alt="">
+                            </div>
+                            <div class="col">
+                              <span
+                                class="screenshort-content-text font-weight-bold text-dark word-break">shot_1_attach_1.png</span>
+                            </div>
+                            <div class="float-right">
+                              <a href="#" class="viewbtn">View</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <hr class="content-divider">
+
+                      <div class="col-lg-12" style="margin-top: -30px;">
+                        <div class="card text-white shadow">
+                          <div class="card-body row">
+                            <div class="">
+                              <img src="assets/picture.png" alt="">
+                            </div>
+                            <div class="col">
+                              <span
+                                class="screenshort-content-text font-weight-bold text-dark word-break">shot_1_attach_3.png</span>
+                            </div>
+                            <div class="float-right">
+                              <a href="#" class="viewbtn">View</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <hr class="content-divider">
+
+                      <div class="col-lg-12" style="margin-top: -30px;">
+                        <div class="card text-white shadow">
+                          <div class="card-body row">
+                            <div class="">
+                              <img src="assets/video_camera.png" alt="">
+                            </div>
+                            <div class="col">
+                              <span class="screenshort-content-text font-weight-bold text-dark word-break">Screen
+                                record_12.mov</span>
+                            </div>
+                            <div class="float-right">
+                              <a href="#" class="playbtn">Play</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <hr class="content-divider">
+
+                      <button type="button" class="btn btn-view btn-lg btn-block">view all</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+</body>
+<script>
+  var tableArray = [
+    {
+      "project": "Landing page Design",
+      "date": "May 21,2019",
+      "starttime": "1:10pm",
+      "stoptime": "9:20pm",
+      "duration": "8:10:37"
+    },
+    {
+      "project": "Mobile App",
+      "date": "May 22,2019",
+      "starttime": "12:00pm",
+      "stoptime": "8:00pm",
+      "duration": "8:00:00"
+    },
+    {
+      "project": "UI/UX",
+      "date": "May 23,2019",
+      "starttime": "1:10pm",
+      "stoptime": "1:20pm",
+      "duration": "0:10:37"
+    },
+    {
+      "project": "Website/apps",
+      "date": "May 24,2019",
+      "starttime": "1:11pm",
+      "stoptime": "9:00pm",
+      "duration": "7:49:37"
+    },
+    {
+      "project": "Branding",
+      "date": "May 26,2019",
+      "starttime": "1:10pm",
+      "stoptime": "1:20pm",
+      "duration": "0:10:37"
+    }
+  ];
+
+  buildTable(tableArray)
+
+  function buildTable(data) {
+    var table = document.getElementById('constructTable');
+    var row
+    data.forEach(tabledata => {
+      console.log(tabledata.project)
+      row = `
+        <tr>
+        <th scope="row">${tabledata.project}</th>
+        <td>${tabledata.date}</td>
+        <td>${tabledata.starttime}</td>
+        <td>${tabledata.stoptime}</td>
+        <td>${tabledata.duration}</td>
+        </tr>
+        `
+      table.innerHTML += row
+    });
+  }
+</script>
+
+</html>
